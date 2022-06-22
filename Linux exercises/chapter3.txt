@@ -1,0 +1,8 @@
+#!bin/bash
+echo "enter the dir"
+read dir
+find -type f -name "*.xml"
+echo " enter the xml file name"
+read s
+cp $s answes.xml
+mv ans.xml xml

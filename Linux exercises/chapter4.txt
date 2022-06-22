@@ -1,0 +1,8 @@
+grep -l "@gmail.com" *.txt >
+EmailAddressFiles.txt
+cat EnailAddressFiles.txt
+grep -h "@gmamil.com" *.txt >
+EmailAddressFiles.txt
+cat EmailAddresses.txt
+sed 's/gmail/axelor/' EmailAddresses.txt
+
