@@ -1,0 +1,59 @@
+apply plugin : 'java'
+apply plugin : 'eclipse'
+apply plugin : 'eclipse-wtp'
+apply plugin : 'war'
+apply plugin: 'application'
+apply plugin: 'java-library'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+       
+       // https://mvnrepository.com/artifact/com.google.guava/guava
+        implementation 'com.google.guava:guava:31.1-jre'
+       
+        
+        // https://mvnrepository.com/artifact/org.postgresql/postgresql
+        implementation 'org.postgresql:postgresql:42.3.4'
+        
+        
+        // https://mvnrepository.com/artifact/org.hibernate/hibernate-gradle-plugin
+        implementation 'org.hibernate:hibernate-gradle-plugin:5.6.8.Final'
+        
+        
+        // https://mvnrepository.com/artifact/junit/junit
+        testImplementation 'junit:junit:4.13.2'
+        
+        
+        // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+        implementation 'javax.persistence:javax.persistence-api:2.2'
+        
+        
+        // https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api
+        compileOnly 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3'
+        
+        // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+        compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+        
+        // https://mvnrepository.com/artifact/javax.servlet/jstl
+        implementation 'javax.servlet:jstl:1.2'
+        
+        
+        // https://mvnrepository.com/artifact/com.google.inject/guice
+         implementation group: 'com.google.inject', name: 'guice', version: '4.2.2'
+
+        
+        
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'a.App'
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}

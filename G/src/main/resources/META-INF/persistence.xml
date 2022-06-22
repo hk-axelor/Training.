@@ -1,0 +1,4 @@
+<persistence xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
+<persistence-unit name="unit01" transaction-type="RESOURCE_LOCAL">
+</persistence-unit>
+</persistence>
