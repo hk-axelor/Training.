@@ -1,0 +1,14 @@
+ <web-app xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<display-name>Google Guice With Web</display-name>
+<filter>
+<filter-name>GuiceFilter</filter-name>
+<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+</filter>
+<filter-mapping>
+<filter-name>GuiceFilter</filter-name>
+<url-pattern>/*</url-pattern>
+</filter-mapping>
+<listener>
+<listener-class>com.axelor.listener.GuiceListener</listener-class>
+</listener>
+</web-app>
